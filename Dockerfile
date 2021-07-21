@@ -63,6 +63,11 @@ RUN sudo chown -R $USERNAME:$USERNAME .
 
 USER $USERNAME
 
+RUN whoami
+
+WORKDIR /Project
+
+
  
 
 

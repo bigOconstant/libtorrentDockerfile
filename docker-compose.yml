@@ -1,0 +1,19 @@
+version: '3.5'
+
+services:
+
+   developer:
+      entrypoint: /bin/bash
+      command:  -c "sleep infinity"
+      build:
+         context: .
+         dockerfile: Dockerfile
+         args:
+         - USERNAME=developer
+      command:  -c "sleep infinity" 
+      volumes:
+         - ./:/Project
+  
+
+   
+
